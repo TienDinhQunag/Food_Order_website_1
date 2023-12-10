@@ -1,0 +1,228 @@
+body {
+    font-family: 'Poppins';
+    background-color: #faf2f9;
+    padding: 0;
+}
+
+.header {
+    background-color: #ff68b4;
+    padding: 10px;
+    height: 45px;
+    color: rgb(54, 52, 52);
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info p {
+    display: flex;
+    margin-right: 10px; /* Khoảng cách giữa Phone number và Email */
+    font-size: 12px;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .contact-info {
+        font-size: 9px; /* Điều chỉnh kích thước font cho màn hình nhỏ hơn 767px */
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Căn giữa các phần tử trong navbar */
+    align-items: center; /* Căn theo chiều dọc */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around; /* Căn đều các phần tử bên trong */
+    align-items: center; /* Căn theo chiều dọc */
+    width: 100%; /* Đảm bảo chiều rộng đầy đủ */
+}
+
+.logo-container > * {
+    flex-grow: 1; /* Làm cho các phần tử con mở rộng để lấp đầy không gian có sẵn */
+    text-align: center; /* Căn giữa nội dung bên trong các phần tử con */
+}
+
+.brand-logo {
+    flex-grow: 1; /* Mở rộng phần tử "brand-logo" để lấp đầy không gian trống */
+    text-align: center; /* Căn giữa nội dung bên trong */
+}
+
+.brand-logo img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+    align-items: center; /* Align items vertically centered */
+    padding: 5px 10px;
+}
+
+.social-icons img {
+    width: 25px; /* Set your desired width */
+    height: 25px; /* Set your desired height */
+}
+
+
+.search-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon {
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+
+.cart-icon img {
+    width: 40px; 
+    height: 40px; 
+}
+
+.login-button {
+    background-color: #ff68b4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.login-button:hover {
+    background: #3e4348;
+  }
+
+.search-icon {
+    cursor: pointer;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #fff6f6;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-icon img {
+    width: 30px; /* Set your desired width */
+    height: 30px; /* Set your desired height */
+    margin-right: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.search-box.active {
+    display: block;
+    z-index: 1000;
+}
+
+/* Ẩn logo-container trên các thiết bị có độ rộng nhỏ hơn 768px (mobile) */
+@media (max-width: 768px) {
+    .logo-container {
+        display: none;
+    }
+}
+
+/* Hiển thị navbar-toggler trên các thiết bị có độ rộng nhỏ hơn 768px (mobile) */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Điều chỉnh theo kích thước mong muốn */
+    margin: 0 auto; /* Để căn giữa theo chiều ngang */
+    padding: 0 20px; /* Khoảng cách lề nếu cần */
+}
+
+.carousel-item img { 
+    height: auto;  
+    width: 70%; /* Set the width to 70% of the container width */
+    display: block; /* Make the image a block element for centering */
+    margin: 0 auto; /* Auto margin horizontally centers the image */
+    padding: 40;
+    padding-left: 50;
+    padding-right: 50;
+}
+
+.flex-header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section {
+    background-color: #696969; /* Dim Gray */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    max-width: 100%;
+}
+
+/* Căn giữa các dòng chữ trên giao diện mobile */
+@media (max-width: 768px) {
+    #menuItems {
+        text-align: center; /* Căn giữa các dòng chữ */
+    }
+
+    .nav-item a {
+        display: block;
+        transition: all 0.3s ease; /* Tạo hiệu ứng khi chọn các dòng chữ */
+    }
+
+    .nav-item a:hover {
+        color: #ff68b4; /* Thay đổi màu chữ khi di chuột qua */
+        transform: scale(1.1); /* Phóng to chữ khi di chuột qua */
+    }
+
+    .navbar-collapse.collapse.show{
+        color: #3e4348;
+        font-weight: 600;
+    }
+
+
+}
+
+#menuItems {
+    display: flex;
+    justify-content: space-around; /* Để các phần tử bên trong cách đều nhau */
+}
+
+.nav-item {
+    margin: 0 10px; /* Khoảng cách giữa từng phần tử */
+}
+
+#menuItems {
+    display: flex;
+    justify-content: space-around; /* Để các phần tử bên trong cách đều nhau */
+}
+
+.nav-item {
+    margin: 0 10px; /* Khoảng cách giữa từng phần tử */
+}
+
+}
