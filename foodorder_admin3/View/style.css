@@ -1,0 +1,318 @@
+.cart {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Khoảng cách giữa các dòng */
+}
+
+table tbody tr{
+    padding: 15px 0; /* Điều chỉnh padding theo ý muốn */
+    margin-bottom: 20px; /* Điều chỉnh margin giữa các hàng theo ý muốn */   
+}
+
+table th, table td {
+    border: none; /* Loại bỏ border giữa các ô */
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Thêm border dưới */
+}
+
+table th:first-child,
+table td:first-child {
+    border-left: 1px solid #ddd; /* Thêm border bên trái cho cột đầu tiên */
+}
+
+table th:last-child,
+table td:last-child {
+    border-right: 1px solid #ddd; /* Thêm border bên phải cho cột cuối cùng */
+}
+
+.cart-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-summary label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cart-summary button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-summary button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS để thay đổi màu sắc và hiệu ứng cho các button */
+.minus-btn,
+.plus-btn {
+    margin: 5px; /* Điều chỉnh khoảng cách theo ý muốn */
+}
+button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Màu mặc định của nút */
+button.default {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Màu khi di chuột vào nút */
+button.default:hover {
+    background-color: #0056b3;
+}
+
+/* Màu nút thực hiện hành động chính, ví dụ: Đặt hàng */
+button.primary {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+/* Màu khi di chuột vào nút thực hiện hành động chính */
+button.primary:hover {
+    background-color: #f50057;
+}
+
+/* Màu nền của checkbox "Chọn tất cả sản phẩm" */
+input[type="checkbox"] {
+    /* Thêm các thuộc tính CSS cho checkbox nếu cần */
+}
+
+/* Màu và hiệu ứng cho label của checkbox */
+input[type="checkbox"]+label {
+    font-weight: bold;
+    color: #ff4081;
+    cursor: pointer;
+}
+
+/* Màu khi di chuột vào label của checkbox */
+input[type="checkbox"]+label:hover {
+    color: #f50057;
+}
+table th, table td {
+    border: none;
+    padding: 8px;
+    text-align: center; /* Thêm thuộc tính text-align: center; */
+    border-bottom: 1px solid #ddd;
+}
+
+/* CSS để đặt dữ liệu ở giữa của cột đầu tiên */
+table th:first-child,
+table td:first-child {
+    border-left: 1px solid #ddd;
+    text-align: center; /* Thêm thuộc tính text-align: center; */
+}
+
+/* CSS để đặt dữ liệu ở giữa của cột cuối cùng */
+table th:last-child,
+table td:last-child {
+    border-right: 1px solid #ddd;
+    text-align: center; /* Thêm thuộc tính text-align: center; */
+}
+.search-container {
+text-align: center;
+margin-top: 20px; /* Căn lề từ phía trên (hoặc điều chỉnh theo ý muốn của bạn) */
+}
+
+.search-button {
+padding: 10px 20px; /* Điều chỉnh kích thước của nút theo ý muốn */
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.search-button:hover {
+background-color: #0056b3;
+}
+
+/* BoneAdmin.css */
+
+/* Reset CSS */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff80ab; /* Pink */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    /* Đặt kiểu cho logo */
+}
+
+.notification {
+    /* Thiết kế cho thông báo */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #fce4ec; /* Màu hồng nhạt */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Cho phép cuộn khi nội dung dài */
+}
+
+/* Menu trong Sidebar */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff80ab; /* Hover màu pink */
+}
+
+/* Admin Info */
+.admin-info {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Nút đăng xuất */
+.logout {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Content */
+.content {
+    margin-left: 250px; /* Để content không bị overlap với sidebar */
+    padding: 20px;
+}
+/* BoneAdmin.css */
+
+/* Reset CSS */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff80ab; /* Pink */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    /* Đặt kiểu cho logo */
+}
+
+.notification {
+    /* Thiết kế cho thông báo */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #fce4ec; /* Màu hồng nhạt */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Cho phép cuộn khi nội dung dài */
+}
+
+/* Menu trong Sidebar */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff80ab; /* Hover màu pink */
+}
+
+/* Admin Info */
+.admin-info {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Nút đăng xuất */
+.logout {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Content */
+.content {
+    margin-left: 250px; /* Để content không bị overlap với sidebar */
+    padding: 20px;
+}
